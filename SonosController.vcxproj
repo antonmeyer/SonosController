@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{1BEFEB8D-3180-48FB-B246-A2B4FB692BFE}</ProjectGuid>
+    <RootNamespace>SonosController</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>C:\Users\daubi\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.1.0\libraries\ArduinoOTA;C:\Users\daubi\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.1.0\libraries\ArduinoOTA\utility;C:\Users\daubi\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.1.0\libraries\DNSServer\src;C:\Users\daubi\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.1.0\libraries\DNSServer\src\utility;C:\Users\daubi\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.1.0\libraries\ESP8266mDNS;C:\Users\daubi\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.1.0\libraries\ESP8266mDNS\utility;C:\Users\daubi\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.1.0\libraries\ESP8266WebServer\src;C:\Users\daubi\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.1.0\libraries\ESP8266WebServer\src\utility;C:\Users\daubi\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.1.0\libraries\ESP8266WiFi\src;C:\Users\daubi\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.1.0\libraries\ESP8266WiFi\src\utility;C:\Users\daubi\Documents\Arduino\libraries\microxpath-master\src;C:\Users\daubi\Documents\Arduino\libraries\microxpath-master\src\utility;C:\Users\daubi\Documents\Arduino\libraries\sonos-master\src;C:\Users\daubi\Documents\Arduino\libraries\sonos-master\src\utility;C:\Users\daubi\Documents\Arduino\libraries\WiFiManager;C:\Users\daubi\Documents\Arduino\libraries\WiFiManager\utility;C:\Program Files\Arduino\libraries;C:\Users\daubi\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.1.0\libraries;C:\Program Files\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\15taoyx0.mpm\Micro Platforms\default\debuggers;C:\Users\daubi\Documents\Arduino\libraries;C:\Users\daubi\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.1.0\cores\esp8266;C:\Users\daubi\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.1.0\cores\esp8266\libb64;C:\Users\daubi\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.1.0\cores\esp8266\spiffs;C:\Users\daubi\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.1.0\cores\esp8266\umm_malloc;C:\Users\daubi\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.1.0\variants\d1_mini;C:\Users\daubi\Documents\Arduino\SonosController\SonosController;C:\Users\daubi\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.1.0/tools/sdk/include;C:\Users\daubi\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\1.20.0-26-gb404fb9-2\xtensa-lx106-elf\include\c++\4.8.2;C:\Users\daubi\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\1.20.0-26-gb404fb9-2\xtensa-lx106-elf\include\c++\4.8.2\xtensa-lx106-elf;C:\Users\daubi\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\1.20.0-26-gb404fb9-2\xtensa-lx106-elf\include;C:\Users\daubi\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\1.20.0-26-gb404fb9-2\lib\gcc\xtensa-lx106-elf\4.8.2\include;C:\Users\daubi\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.1.0\tools\sdk\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>C:\Users\daubi\Documents\Arduino\SonosController\SonosController\__vm\.SonosController.vsarduino.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PreprocessorDefinitions>__ESP8266_ESp8266__;__ESP8266_ESP8266__;__ets__;ICACHE_FLASH;F_CPU=80000000L;ARDUINO=10608;ARDUINO_ESP8266_ESP12;ARDUINO_ARCH_ESP8266;ESP8266;__cplusplus=201103L;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="SonosController.ino">
+      <FileType>CppCode</FileType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="__vm\.SonosController.vsarduino.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="SonosController.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties VM_ReCompileIfSourceIsNewer="" custom_esp8266_d1_mini_UploadSpeed="921600" arduino.build.auto_discover_includes="1" arduino.upload.port="COM28" custom_esp8266_d1_mini_UploadTool="esptool" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
